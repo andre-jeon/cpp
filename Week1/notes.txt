@@ -2,3 +2,12 @@ OOP(Object Oriented Programming)
 
 Classes are building blocks of OOP
 
+Encapsulation: Idea of bundling, being grouped together within a class
+
+Abstraction: signs a contract, requires a rule.
+
+Inheritance:
+
+Polymorphism:
+
+

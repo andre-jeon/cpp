@@ -9,13 +9,41 @@ using std::string;
 // public: you will be able to access it outside of the class 
 // protected: in-between private and public
 
-class Employee {
-// private:
+// abtract class
+class AbstractEmployee {
+    virtual void AskForPromotion() = 0;
+};
+
+class Employee:AbstractEmployee {
+
+private:
 // protected:
-public:
+// public:
     string Name;
     string Company;
     int Age;
+
+public:
+    void setName(string name) {
+        Name = name;
+    }
+    string getName() {
+        return Name;
+    }
+    void setCompany(string company) {
+        Company = company;
+    }
+    string getCompany() {
+        return Company;
+    }
+    void setAge(int age) {
+        // validation check
+        if(age >= 18)
+        Age = age;
+    }
+    int getAge() {
+        return Age;
+    }
 
     // creating a introducing function
     void IntroduceYourself() {
@@ -40,7 +68,15 @@ public:
         Company = company;
         Age = age;
     }
+    
+    void AskForPromotion() {
+        if (Age > 30)
+            std::cout << Name << " got promoted!" << std::endl;
+        else
+            std::cout << Name << ", sorry NO promotion for you!" << std::endl;
+    }
 };
+
 
 // creating the variable type
 int main() {
@@ -50,9 +86,14 @@ int main() {
     Employee employee1 = Employee("Andre", "Néo-Manhattan", 25);
 
     // invoking the introducing function
-    employee1.IntroduceYourself();
+    // employee1.IntroduceYourself();
 
-    Employee employee2 = Employee("Nam", "Néo-Manhattan", 24);
+    Employee employee2 = Employee("Nam", "Néo-Manhattan", 35);
 
-    employee2.IntroduceYourself();
+    // employee2.IntroduceYourself();
+
+    // employee1.setAge(15);
+    // std::cout << employee1.getName() << " is " << employee1.getAge() << " years old.";
+    employee1.AskForPromotion();
+    employee2.AskForPromotion();
 }
