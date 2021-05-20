@@ -1,0 +1,17 @@
+DATA TYPES AND EXPRESSIONS
+
+Sequencial flow: code getting executed line by line
+
+cout: prints an instruction to an user
+cin: that reads from an user
+
+DATA: int, float, double, char, string, bool
+
+EXPRESSION: I/O expressions, Arithmetic expressions
+
+CONTROL FLOW: Sequencial Flow
+
+https://replit.com/@ansankid/Weeks-and-Days#main.cpp
+
+------------------------------------------------------------
+
