@@ -19,9 +19,12 @@ class Employee:AbstractEmployee {
 private:
 // protected:
 // public:
-    string Name;
     string Company;
     int Age;
+
+protected:
+    string Name;
+
 
 public:
     void setName(string name) {
@@ -75,6 +78,10 @@ public:
         else
             std::cout << Name << ", sorry NO promotion for you!" << std::endl;
     }
+
+    void Work() {
+        std::cout << Name << " is checking email, task backlog, performing tasks..." << std::endl;
+    }
 };
 
 
@@ -82,12 +89,28 @@ public:
 class Developer: Employee {
 public:
     string FavProgrammingLanguage;
+
+    // implementing constructor for Teacher
     Developer(string name, string company, int age, string favProgrammingLanguage):Employee(name, company, age) {
         FavProgrammingLanguage = favProgrammingLanguage;
     }
     // method
     void FixBug() {
-        std::cout << getName() << " fixed bug using " << FavProgrammingLanguage << std::endl;
+        std::cout << Name << " fixed bug using " << FavProgrammingLanguage << std::endl;
+    }
+};
+
+class Teacher:public Employee {
+public:
+    string Subject;
+
+    // implementing constructor for Teacher
+    Teacher(string name, string company, int age, string subject):Employee(name, company, age) {
+        Subject = subject;
+    }
+
+    void PrepareLesson() {
+        std::cout << Name << " is preparing " << Subject << " lesson." << std::endl;
     }
 };
 
@@ -107,11 +130,18 @@ int main() {
 
     Developer d = Developer("Andre 2.0", "Spotify", 25, "C++");
 
+    Teacher t = Teacher("CUNT", "AMAZON", 25, "MAF");
+
     // employee1.setAge(15);
     // std::cout << employee1.getName() << " is " << employee1.getAge() << " years old.";
     employee1.AskForPromotion();
     employee2.AskForPromotion();
 
     d.FixBug();
+
+    t.PrepareLesson();
+    t.AskForPromotion();
+
+    t.Work();
 
 }
