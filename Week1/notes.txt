@@ -9,3 +9,18 @@ Abstraction: signs a contract, requires a rule.
 Inheritance: Base Class(Parent Class) -> Child Class
 
 Polymorphism: 
+
+
+3 main components of a computer
+
+CPU
+
+RAM
+
+Secondary Memory: contains a lot of 0s and 1s
+
+8 bits = 1 byte
+
+fetched -> decoded -> recorded
+
+Machine Language: 0s and 1s
