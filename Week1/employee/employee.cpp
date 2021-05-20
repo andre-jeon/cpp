@@ -78,6 +78,19 @@ public:
 };
 
 
+// Developer has all the Employee properties
+class Developer: Employee {
+public:
+    string FavProgrammingLanguage;
+    Developer(string name, string company, int age, string favProgrammingLanguage):Employee(name, company, age) {
+        FavProgrammingLanguage = favProgrammingLanguage;
+    }
+    // method
+    void FixBug() {
+        std::cout << getName() << " fixed bug using " << FavProgrammingLanguage << std::endl;
+    }
+};
+
 // creating the variable type
 int main() {
 
@@ -92,8 +105,13 @@ int main() {
 
     // employee2.IntroduceYourself();
 
+    Developer d = Developer("Andre 2.0", "Spotify", 25, "C++");
+
     // employee1.setAge(15);
     // std::cout << employee1.getName() << " is " << employee1.getAge() << " years old.";
     employee1.AskForPromotion();
     employee2.AskForPromotion();
+
+    d.FixBug();
+
 }

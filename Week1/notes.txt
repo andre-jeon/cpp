@@ -6,8 +6,6 @@ Encapsulation: Idea of bundling, being grouped together within a class
 
 Abstraction: signs a contract, requires a rule.
 
-Inheritance:
+Inheritance: Base Class(Parent Class) -> Child Class
 
-Polymorphism:
-
-
+Polymorphism: 
