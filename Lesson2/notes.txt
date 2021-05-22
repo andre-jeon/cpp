@@ -15,3 +15,9 @@ https://replit.com/@ansankid/Weeks-and-Days#main.cpp
 
 ------------------------------------------------------------
 
+float: to store real numbers(could have fractional part 7.5, 4.6, etc)
+
+Inner representation
+double - each data uses 8 bytes (64bits)
+float - each data uses 4 bytes (32 bits)
+
