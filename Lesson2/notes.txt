@@ -23,3 +23,11 @@ float - each data uses 4 bytes (32 bits)
 
 "a double is double the size of a float."
 
+casting -  converting the representation of one type to the equivalant of another type 
+int -> double/float
+
+char(Characters) - each char data uses 1 bytes (8bits)
+
+ASCII table: Chart that shows specific letters mapped to its own numeric value
+
+
