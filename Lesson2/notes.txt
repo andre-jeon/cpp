@@ -21,3 +21,5 @@ Inner representation
 double - each data uses 8 bytes (64bits)
 float - each data uses 4 bytes (32 bits)
 
+"a double is double the size of a float."
+
