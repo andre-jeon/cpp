@@ -28,6 +28,9 @@ int -> double/float
 
 char(Characters) - each char data uses 1 bytes (8bits)
 
-ASCII table: Chart that shows specific letters mapped to its own numeric value
+ASCII table: Chart that shows specific letters mapped to its own numeric value. 
+"The characters are ampped to numbers by the ASCII table, which are then represented in binary"
+
+
 
 
