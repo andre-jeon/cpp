@@ -2,15 +2,17 @@
 using namespace std;
 
 int main() {
-    int userInput;
+    int userInput, absValue;
 
     cout << "Please enter an integer:" << endl;
     cin >> userInput;
 
+    absValue = userInput;
+
     if (userInput < 0)
-        userInput *= (-1);
+        absValue = userInput * (-1);
     
-    cout << userInput << endl;
+    cout << "|" << userInput << "| = " << absValue << endl;
 
     return 0;
 }
