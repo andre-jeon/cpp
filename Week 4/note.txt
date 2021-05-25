@@ -1,0 +1,45 @@
+Problem:
+
+Write a program that reads from the user an integer, and prints it's absolute value.
+
+Example:
+
+Please enter an integer:
+
+-7
+|-7| = 7
+
+------------------------------------------------------------
+One-Way If Statement
+
+...
+...
+if(condition)
+    ...
+...
+...
+
+make sure to put condition inside ()
+evaluating true or false
+
+
+condition is executed based on the boolean expression
+
+------------------------------------------------------------
+Two-Way If Statement
+
+If(condition)
+    ...
+else
+    ...
+...
+
+If(condition) {
+    ...
+    ...
+}
+else{
+    ...
+    ...
+}
+...
