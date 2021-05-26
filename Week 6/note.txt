@@ -1,0 +1,3 @@
+If we know the range use For Loop
+
+If we don't know the range use a While Loop
